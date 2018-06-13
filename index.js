@@ -60,10 +60,10 @@ const formatArxivAsAttachment = function (arxivData) {
 
 
 exports.arxivBot = function arxivBot(req, res) {
-  if (req.body.token !== APP_TOKEN) {
-    res.status(403).send('Invalid token');
-    return;
-  }
+  // if (req.body.token !== APP_TOKEN) {
+  //   res.status(403).send('Invalid token');
+  //   return;
+  // }
   
   if (req.body.type === 'url_verification') {
     res.send(req.body.challenge);
